@@ -42,8 +42,11 @@ h1 {
   background-color: rgba(255, 255, 255, 0.8);
   overflow: scroll;
   margin-bottom: 20px;
-  height: 35px;
-  padding: 10px;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  flex-direction: column; 
   transition: height 1s ease-in;
 }
 
@@ -57,8 +60,9 @@ h1 {
   border-radius: 15px 15px 0 0;
   position: absolute;
   top: 0;
-  width: calc(100% - 40px);
-  padding: 10px 10px 5px 150px;
+  left: 140px;
+  width: calc(100% - 160px);
+  padding: 10px 10px 5px 10px;
   transform: translateY(0%);
   transition: transform 0.3s ease-in, opacity 0.3s ease-in;
   opacity: 0;
@@ -70,6 +74,7 @@ h1 {
 
 .music-info h4 {
   margin: 0;
+  text-align: center;
 }
 
 .progress-container {
@@ -156,3 +161,9 @@ h1 {
   outline: 0;
 }
 
+.lyric-title{
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+}
