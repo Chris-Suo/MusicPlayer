@@ -8,7 +8,7 @@ const audio = document.querySelector("#audio");
 const progress = document.querySelector('.progress');
 const progressContainer = document.querySelector('.progress-container');
 const title = document.querySelector("#title");
-// const cover = document.querySelector('#cover');
+const cover = document.querySelector('#cover');
 
 const songs = ["寶貝", "暖暖", "旋律", "身邊", "小手拉大手", "永不失聯的愛"];
 const lyrics = [
@@ -27,7 +27,7 @@ function loadSong(index) {
   title.innerText = songs[index];
   lyricsContainer.innerHTML = lyrics[index];
   audio.src = `Musics/${songs[index]}.mp3`;
-  //     cover.src = `Images/${song}.jpg`;
+  cover.src = `Images/${index+1}.jpeg`;
 }
 
 function playSong() {
